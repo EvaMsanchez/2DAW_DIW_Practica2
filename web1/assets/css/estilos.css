@@ -1,0 +1,215 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 25px;
+    width: 100%;
+}
+
+.menu, ._1 , ._2, ._4, ._6{
+    background-image: linear-gradient(to right, rgb(75, 51, 208), rgb(98, 58, 162));
+}
+
+.menu{
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.menu .hamburguesa{
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+
+.menu .enlace{
+    color: black;
+}
+
+.menu .botonNav{
+    background-color: rgb(0, 105, 209);
+}
+
+.menu .iconos{
+    color: white;
+    border-radius: 50%;
+    padding: 3px 8px;
+}
+
+section ._2 img{
+    width: 100%; 
+    height: auto;
+}
+
+section ._3 p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+section ._3 .sombra{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 50px 0px 40px 0px;
+}
+
+section ._3 .icon{
+    color: rgb(0, 105, 209);
+}
+
+section ._3 img{
+    width: 100%;
+    height: auto;
+}
+
+section ._4 .padding{
+    padding: 120px 0px 100px 0px;
+}
+
+section ._5 a{
+    color: black;
+}
+
+section ._5 .foto{
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease-in-out;
+    display: block;   
+}
+
+section ._5 .acercar{
+    position: relative;
+    overflow: hidden;
+}
+
+section ._6 .padding{
+    padding: 100px 0px 100px 0px;
+}
+
+section ._7 input, section ._6 textarea{
+    border: none;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: none;
+}
+
+section ._7 button{
+    background-color: rgb(75, 51, 208);
+    border: none;
+}
+
+footer h6{
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer .iconos{
+    padding: 10px 15px;
+    margin: 0px 15px;
+    border-radius: 50%;
+}
+
+.menu .large{
+    display: none;
+}
+
+@media (min-width: 992px) /*LG*/
+{
+    .menu .large{
+        display: block;
+    }
+    .menu .small{
+        display: none;
+    }   
+}
+
+
+
+/*Efectos*/
+section ._2 .buttonPortada:hover{
+    color: white;
+    background-color: rgb(0, 105, 209);
+    border: none;
+}
+
+.menu .enlace:hover{
+    color: rgb(0, 105, 209);
+}
+
+.menu .botonNav:hover{
+    background-color: black;
+}
+
+.menu .iconos:hover{
+    background-color: white;
+    color: rgb(0, 105, 209);;
+}
+
+section ._3 .hover:hover{
+    color: white;
+    background: linear-gradient(to right, rgb(75, 51, 208), rgb(98, 58, 162));
+    transition: background-color 0.6s;
+}
+
+.hover:hover .icon{
+    color: white;
+}
+
+section ._4 svg{
+    transition: transform 0.4s ease-in-out;
+}
+   
+section ._4 .caja:hover svg{
+    transform: translateY(-15px);
+}
+
+section ._5 a:hover{
+    color: rgb(48, 184, 253);
+}
+
+section ._5 .acercar:hover .foto{
+    transform: scale(1.2);
+}
+
+.acercar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 255, 0);
+    z-index: 1;
+    transition: background 0.2s ease-in-out;
+}
+
+.acercar:hover::before{
+    background: rgb(0, 123, 255, 0.8); 
+}
+
+.acercar:hover::after{
+    content: "Latest Work";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+section ._7 button:hover{
+    background-color: black;
+}
+
+footer .iconos:hover{
+    background-color: #B0578D;
+    color: white;
+}

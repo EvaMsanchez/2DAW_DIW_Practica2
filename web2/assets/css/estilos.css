@@ -1,0 +1,121 @@
+body{
+    font-family: Inter, sans-serif;
+    color: #1d1d1d;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+}
+
+section ._1 .fondo{
+    background-image: radial-gradient(circle farthest-corner at 25% -20%, rgba(122, 167, 255, 0.15), hsla(0, 0%, 100%, 0) 52%), 
+                radial-gradient(circle farthest-corner at 100% 0%, rgba(255, 1, 1, 0.08), hsla(0, 0%, 100%, 0) 25%);
+}
+
+.menu{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #f5f6f7;
+    z-index: 1;
+}
+
+.logo{
+    width: 178px;
+    height: 30px;
+}
+
+.buscador{
+    background-color: #f5f6f7;
+    border: transparent;
+}
+
+.hamburguesa{
+    border: none;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+section ._2 .fondo{
+    background-image: linear-gradient(54deg, rgba(255, 131, 122, 0.25), rgba(255, 131, 122, 0) 28%), 
+                linear-gradient(241deg, rgba(239, 152, 207, 0.25), rgba(239, 152, 207, 0) 36%);
+    background-color: #f5f6f7;
+}
+
+.ilustracion{
+   width: 335px;
+   height: 340px;
+   max-width: 100%;
+}
+
+section ._2 .padding{
+    padding: 80px 0;
+}
+
+section ._3 button{
+    border: 1px solid #e7ecf0;;
+}
+
+section ._5 .fondo{
+    background-color: #1d1d1d;
+    background-image: radial-gradient(circle farthest-corner at 0% 50%, rgba(255, 1, 1, 0.15), transparent 47%), 
+                radial-gradient(circle farthest-corner at 40% 130%, rgba(122, 167, 255, 0.41), transparent 58%);
+}
+   
+footer .fondo{
+    background-color: #f5f6f7;
+}
+
+.color{
+    
+    color: #99a4af;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*Efectos*/
+.buscador:focus{
+    box-shadow: none;
+    border: 1px solid #c5ced5;
+}
+
+.buscador:hover{
+    border: 1px solid #c5ced5;
+}
+
+.hamburguesa:focus{
+    box-shadow: none;
+}
+
+section ._4 .subir{
+    transition: transform 0.2s ease-in-out;
+}
+   
+section ._4 .subir:hover{
+    transform: translateY(-5px);
+}
+
+section ._4 .colorTexto:hover{
+    color: #495158;
+}
+
+section ._5 button:hover{
+    background-color: #495158;
+}
+
+.enlace:hover{
+    color: black;
+}
+
+@media (max-width: 767px)
+{
+    .ilustracion {
+        max-width: 30%;
+        height: auto;
+    }
+}
